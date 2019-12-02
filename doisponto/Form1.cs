@@ -37,7 +37,7 @@ namespace doisponto
             p2.X = Convert.ToDouble(textBox3.Text);
             p2.Y = Convert.ToDouble(y2.Text);
 
-            label1.Text = (Math.Sqrt(Math.Pow(p2.X - p1.X,2)+Math.Pow(p2.Y - p1.Y, 2))).ToString();
+            label1.Text = p1.Distancia(p2).ToString();
         }
     }
 }
